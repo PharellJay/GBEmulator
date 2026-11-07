@@ -1,0 +1,11 @@
+[workspace]
+resolver = "3"
+members = ["core", "app"]
+
+[workspace.package]
+edition = "2024"
+license = "MIT"
+
+# Test ROMs run tens of millions of cycles; keep test builds fast.
+[profile.test]
+opt-level = 3
